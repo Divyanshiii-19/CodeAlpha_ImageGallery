@@ -1,0 +1,100 @@
+<html>
+    <head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Simple Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+ <h1>My Image Gallery</h1>
+
+<!--FILTER BUTTONS-->
+
+<div class="filter-buttons">
+    <button onClick="filterImages('all')">All</button>
+    <button onClick="filterImages('mountains')">Mountains</button>
+    <button onClick="filterImages('waterfalls')">Waterfalls</button>
+    <button onClick="filterImages('lakes')">Lakes</button>
+</div>
+
+ <div class="gallery">
+    <div class="image lakes">
+        <img src="images/img1.jpg" alt="Lake" onClick="openLightbox();currentSlide(1)">
+    </div>
+    <div class="image lakes">
+        <img src="images/img3.jpg" alt="Lake" onClick="openLightbox();currentSlide(3)">
+    </div>
+    <div class="image lakes">
+        <img src="images/img4.jpg" alt="Lake" onClick="openLightbox();currentSlide(4)">
+    </div>
+    <div class="image lakes">
+        <img src="images/img5.jpg" alt="Lake" onClick="openLightbox();currentSlide(5)">
+    </div>
+    <div class="image lakes">
+        <img src="images/img6.jpg" alt="Lake" onClick="openLightbox();currentSlide(6)">
+    </div>
+    <div class="image lakes">
+        <img src="images/img7.jpg" alt="Lake" onClick="openLightbox();currentSlide(7)">
+    </div>
+    <div class="image waterfalls">
+        <img src="images/img8.jpg" alt="Waterfalls" onClick="openLightbox();currentSlide(8)">
+    </div>
+    <div class="image waterfalls">
+        <img src="images/img9.jpg" alt="Waterfalls" onClick="openLightbox();currentSlide(9)">
+    </div>
+     <div class="image lakes">
+        <img src="images/img10.jpg" alt="Lake" onClick="openLightbox();currentSlide(10)">
+    </div>
+     <div class="image mountains">
+        <img src="images/img11.jpg" alt="Mountains" onClick="openLightbox();currentSlide(11)">
+    </div>
+     <div class="image mountains">
+        <img src="images/img12.jpg" alt="Mountains" onClick="openLightbox();currentSlide(12)">
+    </div>
+     <div class="image waterfalls">
+        <img src="images/img13.jpg" alt="Waterfalls" onClick="openLightbox();currentSlide(13)">
+    </div>
+     <div class="image lakes">
+        <img src="images/img14.jpg" alt="Lake" onClick="openLightbox();currentSlide(14)">
+    </div>
+     <div class="image waterfalls">
+        <img src="images/img15.jpg" alt="Waterfalls" onClick="openLightbox();currentSlide(15)">
+    </div>
+     <div class="image waterfalls">
+        <img src="images/img16.jpg" alt="Waterfalls" onClick="openLightbox();currentSlide(16)">
+    </div>
+    <div class="image mountains">
+        <img src="images/img17.jpg" alt="Mountains" onClick="openLightbox();currentSlide(17)">
+    </div>
+ </div>
+
+ <!--LIGHTBOX MODAL!-->
+ <div id="lightbox" class="lightbox">
+    <span class="close" onClick="closeLightbox()">&times;</span>
+    <div class="lightbox-content">
+        <img class="slides" src="images/img1.jpg">
+        
+        <img class="slides" src="images/img3.jpg">
+        <img class="slides" src="images/img4.jpg">
+        <img class="slides" src="images/img5.jpg">
+        <img class="slides" src="images/img6.jpg">
+        <img class="slides" src="images/img7.jpg">
+        <img class="slides" src="images/img8.jpg">
+        <img class="slides" src="images/img9.jpg">
+        <img class="slides" src="images/img10.jpg">
+        <img class="slides" src="images/img11.jpg">
+        <img class="slides" src="images/img12.jpg">
+        <img class="slides" src="images/img13.jpg">
+        <img class="slides" src="images/img14.jpg">
+        <img class="slides" src="images/img15.jpg">
+        <img class="slides" src="images/img16.jpg">
+        <img class="slides" src="images/img17.jpg">
+      <a class="prev" onClick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onClick="changeSlide(1)">&#10095;</a>
+    </div>
+ </div>
+
+<script src="script.js"></script>
+</body>
+</html>
